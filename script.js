@@ -1,3 +1,4 @@
+document.documentElement.classList.add("js");
 "use strict";
 
 /* ===== MÚSICA =====
@@ -151,4 +152,20 @@ document.getElementById("form-rec").addEventListener("submit", e => {
   }
   img.addEventListener("error", semFoto);
   if (img.complete && img.naturalWidth === 0) semFoto();
+})();
+
+/* ===== MENU HAMBÚRGUER ===== */
+(function () {
+  const btn = document.querySelector(".menu-btn");
+  const menu = document.getElementById("menu");
+  function definir(aberto) {
+    menu.classList.toggle("aberto", aberto);
+    btn.setAttribute("aria-expanded", String(aberto));
+    btn.setAttribute("aria-label", aberto ? "Fechar menu" : "Abrir menu");
+  }
+  btn.addEventListener("click", () => definir(btn.getAttribute("aria-expanded") !== "true"));
+  menu.addEventListener("click", e => { if (e.target.closest("a")) definir(false); });
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape" && menu.classList.contains("aberto")) { definir(false); btn.focus(); }
+  });
 })();
