@@ -11,7 +11,7 @@ const MUSICA = {
     { titulo: "Fumeiro ao Picadeiro", youtube: "", spotify: "https://open.spotify.com/track/5qPwrHQWVaPV7U8ZLZfj7O" },
     { titulo: "Tenho Calos", youtube: "", spotify: "https://open.spotify.com/track/6DWwYH6d0Qz7txKepTIhh5" },
     { titulo: "Cenoura", youtube: "", spotify: "https://open.spotify.com/track/0Bg8mu1wi6WDuI9pnQJxSx" },
-    { titulo: "Culinaria", youtube: "", spotify: "https://open.spotify.com/track/6OSRICCQriZw6pxAqVrFXP" }
+    { titulo: "Culinária", youtube: "", spotify: "https://open.spotify.com/track/6OSRICCQriZw6pxAqVrFXP" }
   ]
 };
 

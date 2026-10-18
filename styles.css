@@ -131,3 +131,7 @@ h2{font-size:clamp(1.8rem,5vw,2.6rem)}
   .js nav ul{flex-direction:column;gap:0}
   .js nav a{display:block;padding:.85rem .2rem;border-bottom:1px solid rgba(245,241,230,.12);font-size:1.05rem}
 }
+
+/* ===== bandeira de Portugal ===== */
+.bandeira-pt{display:inline-block;vertical-align:middle;border-radius:2px;box-shadow:0 0 0 1px rgba(0,0,0,.35);margin-right:.6rem;width:30px;height:20px}
+footer .bandeira-pt{display:block;margin:1.2rem auto 0;width:36px;height:24px}
