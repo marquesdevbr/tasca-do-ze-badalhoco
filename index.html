@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Tasca do Zé Badalhoco · Site de fã não oficial</title>
+<meta name="description" content="Site de fã independente dedicado ao Zé Badalhoco. Ó chefe, meta aí o som!">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Fraunces:ital,wght@1,400;1,600&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#musica">Saltar para o conteúdo</a>
+<header class="topo">
+  <a class="marca" href="#inicio">Tasca do Zé</a>
+  <nav aria-label="Principal">
+    <ul>
+      <li><a href="#musica">Música</a></li>
+      <li><a href="#mestre">O Mestre</a></li>
+      <li><a href="#reclamacoes">Livro de Reclamações</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="bandeirinhas" aria-hidden="true"></div>
+
+<main>
+<section id="inicio" class="hero azulejo">
+  <div class="placa">
+    <p class="mini">Petiscos, tinto e música · Fundada pelos fãs</p>
+    <h1>A Tasca do <span>Zé Badalhoco</span></h1>
+    <p class="slogan">Ó chefe, meta aí o som!</p>
+    <a class="btn" href="#musica">Pôr a tocar</a>
+  </div>
+  <div class="vinil" aria-hidden="true"><svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="98" fill="#16130f"/><circle cx="100" cy="100" r="82" fill="none" stroke="#2c2822" stroke-width="2"/><circle cx="100" cy="100" r="70" fill="none" stroke="#2c2822" stroke-width="2"/><circle cx="100" cy="100" r="58" fill="none" stroke="#2c2822" stroke-width="2"/><path d="M100 4A96 96 0 0 1 196 100" fill="none" stroke="#ffffff22" stroke-width="6"/><circle cx="100" cy="100" r="36" fill="#9e2a22"/><circle cx="100" cy="100" r="30" fill="none" stroke="#c2a14d" stroke-width="1.5"/><circle cx="100" cy="100" r="4" fill="#f5f1e6"/><path id="arco" d="M70 100a30 30 0 0 1 60 0" fill="none"/><text font-size="9" fill="#f5f1e6" font-family="Georgia,serif" letter-spacing="1"><textPath href="#arco" startOffset="50%" text-anchor="middle">TU ME TRAÍSTE</textPath></text></svg></div>
+</section>
+<div class="faixa-slogan" aria-hidden="true"><div class="corre"><span>Ó chefe, meta aí o som ✦ Tinto na mesa ✦ Música no ar ✦ Ó chefe, meta aí o som ✦ Tinto na mesa ✦ Música no ar ✦ </span><span>Ó chefe, meta aí o som ✦ Tinto na mesa ✦ Música no ar ✦ Ó chefe, meta aí o som ✦ Tinto na mesa ✦ Música no ar ✦ </span></div></div>
+
+<section id="musica" aria-labelledby="t-musica">
+  <h2 id="t-musica">Música</h2>
+  <p class="nota-explicito" role="note"><strong>Aviso de conteúdo:</strong> algumas músicas contêm linguagem explícita e podem não ser adequadas a todos os públicos. As faixas são reproduzidas pelo Spotify, que as classifica nos seus leitores.</p>
+  <article class="destaque">
+    <p class="selo">A mais popular</p>
+    <h3>Tu Me Traíste <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span></h3>
+    <p>O grande sucesso do Zé Badalhoco. Ouve no Spotify; este site não aloja músicas.</p>
+    <div id="destaque-player"></div>
+  </article>
+  <h3 class="sub">Mais música da casa</h3>
+  <div id="playlist" class="playlist"></div>
+</section>
+
+<section id="mestre" class="faixa-verde" aria-labelledby="t-mestre">
+  <h2 id="t-mestre">O Mestre</h2>
+  <p class="aviso">Aqui só há humor de fã. Não é biografia: sobre a vida do artista, nada foi inventado nem afirmado. Só sabemos que a "Tu Me Traíste" é dele.</p>
+  <figure class="retrato" id="retrato"><img src="img/ze-badalhoco.jpg" alt="Retrato do Zé Badalhoco" width="360" height="450"></figure>
+  <div class="grid">
+    <div class="cartaz">
+      <h3>Máximas da tasca</h3>
+      <p>Provérbios inventados pelos fãs, que não são citações do artista.</p>
+      <blockquote id="maxima">Clica no botão para o Mestre falar.</blockquote>
+      <button class="btn" id="btn-maxima" type="button">Outra máxima, chefe</button>
+    </div>
+    <div class="cartaz" id="medidor">
+      <h3>Medidor de badalhoquice</h3>
+      <div class="campo"><label for="m-tinto">Copos de tinto: <output id="o-tinto">3</output></label><input id="m-tinto" type="range" min="0" max="10" value="3"></div>
+      <div class="campo"><label for="m-vol">Volume do som: <output id="o-vol">50</output>%</label><input id="m-vol" type="range" min="0" max="100" value="50"></div>
+      <div class="campo"><label for="m-pa">"Pás" por frase: <output id="o-pa">2</output></label><input id="m-pa" type="range" min="0" max="10" value="2"></div>
+      <div class="gauge" aria-hidden="true"><div class="agulha" id="agulha"></div></div>
+      <p class="resultado" id="resultado" role="status" aria-live="polite"></p>
+    </div>
+  </div>
+</section>
+
+<section id="reclamacoes" aria-labelledby="t-rec">
+  <h2 id="t-rec">Livro de Reclamações</h2>
+  <p>Escreve a tua queixa. Nada é enviado nem guardado: fica no teu navegador e desaparece ao fechar a página. Não escrevas dados pessoais.</p>
+  <form id="form-rec" class="livro">
+    <label for="cat">Motivo</label>
+    <select id="cat">
+      <option value="som">O som está baixo</option>
+      <option value="tinto">Faltou tinto</option>
+      <option value="musica">Queria outra música</option>
+      <option value="outra">Outra coisa</option>
+    </select>
+    <label for="texto">A tua reclamação</label>
+    <textarea id="texto" rows="4" maxlength="300" required></textarea>
+    <button class="btn" type="submit">Entregar ao gerente</button>
+  </form>
+  <div id="resposta" class="resposta" role="status" aria-live="polite" hidden></div>
+</section>
+
+<section id="sobre" aria-labelledby="t-sobre">
+  <div class="placa">
+    <h2 id="t-sobre">Sobre</h2>
+    <p>A Tasca do Zé Badalhoco é um projeto de fãs, feito por diversão. Não tem relação oficial com o artista, com a sua equipa nem com editoras ou plataformas.</p>
+    <p>Se és o artista ou representas o artista e queres alterações ou a remoção do site, o projeto é de código aberto: edita ou apaga os ficheiros.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="bandeirinhas" aria-hidden="true"></div>
+  <p><strong>Projeto independente de fã, sem qualquer afiliação oficial.</strong> Nomes e músicas pertencem aos respetivos titulares. Sem cookies, sem recolha de dados.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
